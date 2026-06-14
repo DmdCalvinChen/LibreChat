@@ -94,5 +94,8 @@
     "schema",
     "typescript",
     "librechat"
-  ]
+  ],
+  "dependencies": {
+    "unrun": "^0.2.39"
+  }
 }

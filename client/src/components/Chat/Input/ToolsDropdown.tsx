@@ -22,6 +22,7 @@ interface ToolsDropdownProps {
 }
 
 const ToolsDropdown = ({ disabled }: ToolsDropdownProps) => {
+  return null;
   const localize = useLocalize();
   const context = useBadgeRowContext();
   const { data: startupConfig } = useGetStartupConfig();
