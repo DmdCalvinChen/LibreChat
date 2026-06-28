@@ -38,8 +38,7 @@ type ReasoningProps = {
 const Reasoning = memo(({ reasoning, isLast }: ReasoningProps) => {
   const contentId = useId();
   const localize = useLocalize();
-  const showThinking = useAtomValue(showThinkingAtom);
-  const [isExpanded, setIsExpanded] = useState(showThinking);
+  const [isExpanded, setIsExpanded] = useState(true);
   const [isBarVisible, setIsBarVisible] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const { style: expandStyle, ref: expandRef } = useExpandCollapse(isExpanded);
